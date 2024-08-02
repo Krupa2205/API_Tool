@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fetcher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>API Data Fetcher</h1>
+        <div class="input-section">
+            <input type="text" id="apiUrl" placeholder="Enter API URL">
+            <button id="clear-url">Clear</button>
+            <button id="fetchData">Fetch Data</button>
+            <button id="toggleDarkMode">Toggle Dark Mode</button>
+            <button id="copyButton">Copy Data</button>
+        </div>
+        <div id="loading-spinner" style="display: none;"></div>
+        <div class="output-section">
+            <h2>Output</h2>
+            <div id="output"></div>
+        </div>
+        <div class="horizontal-container">
+            <div class="history-section">
+                <h2>History</h2>
+                <div id="history"></div>
+            </div>
+            <div class="chart-container">
+                <h2>Chart</h2>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <div class="container">
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
